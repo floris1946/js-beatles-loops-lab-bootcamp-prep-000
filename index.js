@@ -27,14 +27,21 @@ const facts = [
 
 // take array of facts (str) and add "!!!" to end of each fact; return new array
 function johnLennonFacts(johnLennonFacts) {
+<<<<<<< HEAD
   var i = johnLennonFacts.length - 1;
   while (i >= 0) {
     johnLennonFacts[i] = johnLennonFacts[i] + "!!!";
     i--;
+=======
+  var i = facts.length;
+  while (i > 0) {
+    johnLennonFacts[i] = johnLennonFacts[i] + "!!!";
+>>>>>>> 6fb66a284afd84595e1bf699bd719747dfad0293
   }
   return johnLennonFacts;
 }
 
+<<<<<<< HEAD
 // create var that stores empty array; add str to array; increment number (arg); 
 function iLoveTheBeatles(num) {
   var love = [];
@@ -49,6 +56,30 @@ function iLoveTheBeatles(num) {
 console.log(iLoveTheBeatles(7));
 
 /*
+=======
+/*
+// create var that stores empty array; 
+function iLoveTheBeatles(num) {
+  
+}
+
+/*
+  describe('johnLennonFacts', function(){
+    it("returns an array of strings with exclamation points", function() {
+      expect(johnLennonFacts([
+        "He was the last Beatle to learn to drive",
+        "He was never a vegetarian",
+        "He was a choir boy and boy scout",
+        "He hated the sound of his own voice"
+      ])).toEqual(["He was the last Beatle to learn to drive!!!", "He was never a vegetarian!!!", "He was a choir boy and boy scout!!!", "He hated the sound of his own voice!!!"]);
+
+      expect(johnLennonFacts([
+        "foo",
+        "bar",
+      ])).toEqual(["foo!!!", "bar!!!"])
+    });
+  });
+>>>>>>> 6fb66a284afd84595e1bf699bd719747dfad0293
 
   describe('iLoveTheBeatles', function() {
     it("returns an array of 'I love the Beatles!' 8 times when passed the parameter 7 ", function() {
